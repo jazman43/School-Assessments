@@ -1,0 +1,7 @@
+﻿  Task_4.cpp
+C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\Development_Assesment_2_task_4\Task_4.cpp(19,73): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\Development_Assesment_2_task_4\Task_4.cpp(23,61): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\Development_Assesment_2_task_4\Task_4.cpp(27,46): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\Development_Assesment_2_task_4\Task_4.cpp(31,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\Development_Assesment_2_task_4\Task_4.cpp(6,21): warning C4101: 'pricePerUnit': unreferenced local variable
+  Development_Assesment_2_task_4.vcxproj -> C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assesment_2_task_4\x64\Debug\Development_Assesment_2_task_4.exe
