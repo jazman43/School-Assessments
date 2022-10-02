@@ -7,17 +7,19 @@ jared evans
 
 
 
-
-
 #include <iostream>
 
 
 
 using namespace std;
 
+//functions
+void NumbersDivisibleBy7(int, int);
+void FindPrimeNumbers(int, int);
+
 int main() {
 
-	int startingNum, endingNum, tempNum, divisble = 0,number , primeNumberCount = 0;
+	int startingNum, endingNum, tempNum;
 	
 	
 	cout << "enter a starting number: ";
@@ -42,19 +44,8 @@ int main() {
 	cout << "numbers divisible by 7 from " << startingNum << " to " << endingNum << endl;
 	cout << "*************************************\n";
 
-
-	for (number = startingNum; number <= endingNum; number++)
-	{
-
-		if (number % 7 == 0)
-		{
-
-			divisble = number;
-
-			cout << divisble << ", ";
-		}
-
-	}
+	NumbersDivisibleBy7(startingNum, endingNum);
+	
 
 	cout << "\n";
 	cout << "\n";
@@ -62,6 +53,35 @@ int main() {
 	cout << "*************\n";
 
 	cout << "Prime List between (" << startingNum << " and " << endingNum << ") :";
+
+	
+	FindPrimeNumbers(startingNum,endingNum);
+
+	
+
+
+	system("pause>0");
+}
+
+
+void NumbersDivisibleBy7(int startingNum, int endingNum) 
+{
+	
+	for (int number = startingNum; number <= endingNum; number++)
+	{
+
+		if (number % 7 == 0)
+		{
+			cout << number << ", ";
+		}
+
+	}
+}
+
+
+void FindPrimeNumbers(int startingNum,int endingNum) {
+
+	int primeNumberCount{};
 
 	for (int i = startingNum; i <= endingNum; i++)
 	{
@@ -86,10 +106,6 @@ int main() {
 
 	}
 
-
 	cout << "\n" << "total number of prime numbers form (" << startingNum << " and " << endingNum << ")";
 	cout << primeNumberCount << endl;
-
-
-	system("pause>0");
 }
