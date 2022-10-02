@@ -11,36 +11,40 @@ using namespace std;
 
 
 int main() {	
-
+	//creating variables
 	int userGuess; 
-
+	int randomNumber;
 	int numberOfGuesses = 3; 
 
-	cout << "Hello wellcome to my guess my number game please enter a number bewtween 1 to 10 you have " << numberOfGuesses << " attems: "; 
+	//prompting user with info and storing there first attempt
+	cout << "Hello wellcome to my guess my number game please enter a number bewtween 1 and 10 you have " << numberOfGuesses << " attempts: "; 
 	cin >> userGuess; 
-
-	int randomNumber; 
-
+	
+	//ramdom seed and storying it in a variable to guess; 
 	srand(time(NULL));
 
 	randomNumber = rand() % 10 + 1; 
 
+	//loop 2 times or untill user guesses correctly
 	while (numberOfGuesses > 1 && userGuess != randomNumber)
 	{
 		numberOfGuesses--;
-
-		cout << "sorry that was incorret please try agine you have " << numberOfGuesses << " remanding ";
+		//lets the user know that they guessed wrong and let them guess again if they have guesses left
+		cout << "\nsorry that was incorrect please try again you have: " << numberOfGuesses << " guesses remaining: ";
 		cin >> userGuess; 
 	}
 
+	//Checks win or lose condition
 	if (userGuess == randomNumber)
 	{
-		cout << "congerates you win you guessed corret the number was " << randomNumber;
+		//displayes if user's guess was correct
+		cout << "\ncongratulations you win you guessed the correct number: " << randomNumber;
 	}
 	else {
-		cout << "sorry you have guessed incorretly too meany times the corret number was " << randomNumber;
+		//displayes if user runs out of guesses
+		cout << "\nsorry you have guessed incorrectly too meany times the correct number was: " << randomNumber;
 	}
 
-	return 0;
-
+	
+	system("pause>0");
 }

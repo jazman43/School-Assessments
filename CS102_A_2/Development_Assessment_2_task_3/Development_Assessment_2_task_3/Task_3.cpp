@@ -13,30 +13,33 @@ using namespace std;
 
 int main() {
 
-	int startNumber =10, endNumber =20, randomNumber, evenNumbers=0,oddNumbers=0;
+	//creating variables
+	int startNumber{10}, endNumber{20}, randomNumber, evenNumbers{}, oddNumbers{};
 
-	//srand(time(NULL));
-	std::default_random_engine generator;
+	cout << "Random numbers between 10 to 20\n";
+	cout << "\n*******************************\n";
 
+	//creates a random seed	
+	srand(time(NULL));
 
-	for (int num = startNumber; num < endNumber; num++)
+	//cycles between 6 times to display 6 random numbers between 10 and 20 
+	for (int num = 0; num < 6; num++)
 	{	
-		
-		uniform_int_distribution<int> distribution(startNumber, endNumber);
-		randomNumber = distribution(generator);
+		//creates a random number and stores a random number 
+		randomNumber = rand() % ((endNumber + 1) - startNumber) + startNumber;		
 
-		//randomNumber = rand() % 10 + 20;
-		
-		cout << randomNumber << " ,";
-		if (randomNumber %2 == 0) {
-			evenNumbers++;			
-		}
-		else
-		{
-			oddNumbers++;			
-		}
+		//if the loop is on its last loop dont display the , and displayes the random numbers
+		if (num >= 5) {	cout << randomNumber;}
+		else{cout << randomNumber << ", ";}		  
+
+		//adds the even numbers that are created randomly 
+		if (randomNumber %2 == 0) {evenNumbers++;}
+		else{oddNumbers++;}//<- adds the odd numbers that are created randomly 
 	}
-	cout << evenNumbers << endl;
-	
-	cout << oddNumbers << endl;
+	//displayes all the even number added together
+	cout << "\nNumber of even numbers in the list: " << evenNumbers << endl;
+	//displayes all the even number added together
+	cout << "Number of odd numbers in the list: " << oddNumbers << endl;
+
+	system("pause>0");
 }

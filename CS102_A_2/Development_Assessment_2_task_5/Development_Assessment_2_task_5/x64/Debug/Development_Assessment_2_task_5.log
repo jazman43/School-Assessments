@@ -1,3 +1,3 @@
 ﻿  Task_5.cpp
-C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assessment_2_task_5\Development_Assessment_2_task_5\Task_5.cpp(22,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Development_Assessment_2_task_5.vcxproj -> C:\Users\GGPC\C++ Yoobee\C++ test\Development_Assessment_2_task_5\x64\Debug\Development_Assessment_2_task_5.exe
+C:\Users\GGPC\Documents\GitHub\School-Assessments\CS102_A_2\Development_Assessment_2_task_5\Development_Assessment_2_task_5\Task_5.cpp(24,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Development_Assessment_2_task_5.vcxproj -> C:\Users\GGPC\Documents\GitHub\School-Assessments\CS102_A_2\Development_Assessment_2_task_5\x64\Debug\Development_Assessment_2_task_5.exe

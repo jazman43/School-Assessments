@@ -68,9 +68,10 @@ void NumbersDivisibleBy7(int startingNum, int endingNum)
 		//then checks if it can be divided by 7 and displays that number
 		if (number % 7 == 0)
 		{
-			cout << number << ", ";
+			if (number >= endingNum -1)	{ cout << number; }
+			else{ cout << number << ", "; }
+			
 		}
-
 	}
 }
 
@@ -81,7 +82,6 @@ void FindPrimeNumbers(int startingNum,int endingNum) {
 	//Cycle through all numbers in between the users starting number and ending number
 	for (int i = startingNum; i <= endingNum; i++)
 	{
-
 		bool prime = true;
 		//starting at 2 we cycle through the numbers a second time
 		for (int count = 2; count < i; count++)
@@ -96,11 +96,10 @@ void FindPrimeNumbers(int startingNum,int endingNum) {
 		}
 		//if true then we print out the prime number and add them togeter
 		if (prime)
-		{
+		{			
 			cout << i << ", ";
 			primeNumberCount++;
 		}
-
 	}
 	
 	cout << "\n" << "total number of prime numbers form (" << startingNum << " and " << endingNum << "): ";
