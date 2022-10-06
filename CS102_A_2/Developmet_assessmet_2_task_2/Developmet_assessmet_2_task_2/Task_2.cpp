@@ -11,7 +11,7 @@ jared evans
 
 using namespace std;
 
-//functions
+//functions protypes
 void NumbersDivisibleBy7(int, int);
 void FindPrimeNumbers(int, int);
 
@@ -36,7 +36,6 @@ int main() {
 		startingNum = endingNum;
 
 		endingNum = tempNum;
-
 	}
 
 	//providing visual info to user

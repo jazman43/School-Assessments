@@ -17,7 +17,7 @@ int main() {
 	int numberOfGuesses = 3; 
 
 	//prompting user with info and storing there first attempt
-	cout << "Hello wellcome to my guess my number game please enter a number bewtween 1 and 10 you have " << numberOfGuesses << " attempts: "; 
+	cout << " Hello wellcome to my guess my number game\n\n Please enter a number bewtween 1 and 10 you have " << numberOfGuesses << " attempts: "; 
 	cin >> userGuess; 
 	
 	//ramdom seed and storying it in a variable to guess; 
@@ -28,9 +28,9 @@ int main() {
 	//loop 2 times or untill user guesses correctly
 	while (numberOfGuesses > 1 && userGuess != randomNumber)
 	{
-		numberOfGuesses--;
+		--numberOfGuesses;
 		//lets the user know that they guessed wrong and let them guess again if they have guesses left
-		cout << "\nsorry that was incorrect please try again you have: " << numberOfGuesses << " guesses remaining: ";
+		cout << "\nsorry that was incorrect please try again you have: " << numberOfGuesses << " attempts remaining: ";
 		cin >> userGuess; 
 	}
 

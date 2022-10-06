@@ -6,8 +6,8 @@ jared evans
 */
 
 #include <iostream>
-#include <stdlib.h>
-#include <random>
+
+
 
 using namespace std;
 
