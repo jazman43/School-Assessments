@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bannerColor: rgba(64, 64, 64, 0.25);
+    --imgtint: rgb(39, 39, 39);
+}
+
+body{
+    font-family: 'ABeeZee', sans-serif ;    
+}
+
+.head{   
+    background-image: url(https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg);
+    height: 120vh;
+    background-size: cover;    
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: italic;
+    margin: 20px;
+}
+
+select{
+    border:10px;
+    border-color: black;
+    height: 40px;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.title-bar{
+    display: flex;
+    background-color: var(--bannerColor);
+    width: 100%;
+    justify-content: space-between;
+    height: 10%;
+     
+    font-size: 30px;  
+}
+
+.title-bar h1{
+    margin: auto 20px;
+}
+
+
+.nav-list{    
+    justify-content: flex-end;
+   /* background-color: blueviolet;*/
+    margin: auto 20px;
+    
+}
+
+.nav-item{
+    margin: 5px;
+    width: 150px;
+    height: auto;  
+    border-left: 6px;
+    text-align: center;
+    border-color: black;
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    font-style: normal;
+   /* background-color: aqua;*/
+    color: black;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+.nav-item:hover{
+    background-color: black;
+    color: white;
+}
+.search-bar-input{
+    display: flex;
+    
+}
+
+.search-form{
+    background-color: var(--bannerColor);
+    width: 50%;
+    height: 100px;
+    
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destination-box{
+    display: flex;
+    
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.destination-box img{
+    width: 400px;
+    height: 300px;
+}
+
+.top-destinations{
+    text-align: center;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.des-image{
+    margin: 20px;
+    background-color: var(--imgtint);
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.section-title{
+    font-size: 35px;
+}
+.des-name{
+    background-color: var(--bannerColor);
+    width: 100%;
+    height: 60px;
+    margin: auto;
+    padding: auto;
+}
+
+.des-content:hover{
+    background-color: black;
+    color: white;
+}
+
+.des-content{
+    background-color: var(--bannerColor);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.about-us-content{
+    text-align: center;
+    margin-left: 420px;
+    margin-right: 420px;
+    margin-top: 20px;
+    margin-bottom: 300px;
+}
+
+/*search and filter hotels section*/
+.sort-by-map-wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 200px;
+}
+
+.hotel-info-box{
+    height: 200px;
+    width: auto;
+    background-color: var(--bannerColor);
+    margin: 20px 300px;
+    display: flex;
+}
+
+.hotel-img img{
+    height: 180px;
+    margin: 10px;
+}
+.hotel-name-stars-info{
+    display: flexbox;
+    margin: 10px;
+}
+
+.hotel-name{
+    margin: 15PX 5px;
+    font-size: 20px;
+}
+
+.hotel-stars{
+    margin-bottom: 15px;
+}
+
+.hotel-deals-pricing{
+    background-color: var(--bannerColor);
+    height: 180px;
+    width: 400px;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.lower-filters{
+    display: flexbox;
+}
+
+/*login sign up section*/
+.log-in-sign-up-wrapper{
+    background-color: rgba(27, 27, 27, 0.7);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 20px 600px;
+    border: var(--bannerColor) solid 20px;
+    border-radius: 5px;
+    height: 700px;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+
+.form-inputs{
+    margin-top: 40px;
+}
+
+.login-contaner{
+    display: none;
+}
+
+#search-submit-id{
+    margin: 20px;
+    width: 50px;
+    height: 30px;
+}
+
+.heart-button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: rgba(57, 54, 53, 0.613);
+    border-radius: 5px;
+}

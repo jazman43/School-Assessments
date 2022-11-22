@@ -30,7 +30,7 @@ int main() {
 	{
 		--numberOfGuesses;
 		//lets the user know that they guessed wrong and let them guess again if they have guesses left
-		cout << "\nsorry that was incorrect please try again you have: " << numberOfGuesses << " attempts remaining: ";
+		cout << "\n sorry that was incorrect please try again you have: " << numberOfGuesses << " attempts remaining: ";
 		cin >> userGuess; 
 	}
 
@@ -38,11 +38,11 @@ int main() {
 	if (userGuess == randomNumber)
 	{
 		//displayes if user's guess was correct
-		cout << "\ncongratulations you win you guessed the correct number: " << randomNumber;
+		cout << "\n congratulations you win you guessed the correct number: " << randomNumber;
 	}
 	else {
 		//displayes if user runs out of guesses
-		cout << "\nsorry you have guessed incorrectly too meany times the correct number was: " << randomNumber;
+		cout << "\n sorry you have guessed incorrectly too meany times the correct number was: " << randomNumber;
 	}
 
 	

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">    
+    <title>hotel search engine</title>
+</head>
+<body>
+    <header class="head">
+        <div class="title-bar nav-bar">
+            <h1 class="title-head">hotel search engine</h1>
+            <div class="nav-bar-link">
+                <ul class="nav-list">
+                    <li class="nav-item home-link">
+                        <a href="/index.html">home</a>
+                        <i class="fa-solid fa-house"></i>                        
+                    </li>
+                    <li class="nav-item attraction-link">
+                        <a href="/attraction.html">attraction</a>
+                        <i class="fa-solid fa-ferris-wheel"></i>
+                    </li>
+                    <li class="nav-item favourits-link">
+                        <a href='/favourits.html'>favourites</a>
+                        <i class="fa-solid fa-heart"></i>
+                    </li>
+                    <li class="nav-item login-link">
+                        <a href="/login.html" id="user-name">login</a>
+                        <i class="fa-solid fa-user"></i>
+                    </li>
+                    <li class="nav-item follow-link">
+                        <a href="#">follow</a>
+                        <i class="fa-brands fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>            
+        </div>
+      <div class="log-in-sign-up-wrapper">
+        <div class="sign-up-box" id="sign-up-box">
+            <h2 class="sign-up-title">
+                Create an account today
+            </h2>
+            <form action="" class="sign-up-form forms" id="sign-up-form-id" name="sign-up-form-name">                    
+                <label for="email" class="form-inputs">
+                    <span class="required-field">*</span>
+                    Email-<i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="sign-up-email" id="sign-up-email" >
+                </label>
+                <label for="first-name" class="form-inputs">
+                    <span class="required-field">*</span>
+                    first name<i class="fa-solid fa-user"></i>
+                    <input type="text" name="sign-up-first-name" id="sign-up-first-name" >
+                </label>
+                <label for="last-name" class="form-inputs">
+                    <span class="required-field">*</span>
+                    last name<i class="fa-solid fa-user"></i>
+                    <input type="text" name="sign-up-last-name" id="sign-up-last-name">
+                </label>
+                <label for="password-first" class="form-inputs">
+                    <span class="required-field">*</span>
+                    password<i class="fa-solid fa-lock"></i>
+                    <input type="password" name="sign-up-password-first" id="sign-up-password-first" >
+                </label>
+                <label for="password-confirm" class="form-inputs">
+                    <span class="required-field">*</span>
+                    confirm password<i class="fa-solid fa-lock"></i>
+                    <input type="password" name="sign-up-password-confirm" id="sign-up-password-confirm" >
+                </label>
+                <label for="opt-for-mail" class="form-inputs">
+                    weekly newsletter<i class="fa-solid fa-newspaper"></i>
+                    <input type="checkbox" name="sign-up-opt-for-mail" id="sign-up-opt-for-mail">
+                </label>
+                <input type="submit" value="sign up" class="form-inputs">
+                <button class="goto-login-already-a-member form-inputs " id="to-login">Already a member/login</button>
+            </form>
+        </div>
+        <div class="login-contaner" id="login-contaner">
+            <h2 class="login-title">
+                Login to your account today
+            </h2>
+            <form action="" class="login-form forms" id="login-form-id" name="login-form-name">
+                
+                <form action="" class="login-form">                    
+                    <label for="email" class="form-inputs">
+                        <span class="required-field">*</span>
+                        Email<i class="fa-solid fa-envelope"></i>
+                        <input type="text" name="login-email" id="login-email">
+                    </label>                    
+                    <label for="password-first" class="form-inputs">
+                        <span class="required-field">*</span>
+                        password<i class="fa-solid fa-lock"></i>
+                        <input type="password" name="login-password-first" id="login-password-first" >
+                    </label>                    
+                    <label for="remember-me" class="form-inputs">
+                        remember-me<i class="fa-solid fa-newspaper"></i>
+                        <input type="checkbox" name="login-remember-me" id="login-remember-me">
+                    </label>
+                    <input type="submit" value="login" class="form-inputs">
+                    <button class="goto-login-already-a-member form-inputs" id="to-signup">not a member/signup</button>
+                </form>
+            </form>
+        </div>
+      </div>
+    </header>
+    
+    <script src="https://kit.fontawesome.com/c18602a1e5.js" crossorigin="anonymous"></script>
+    <script src="/js/sript.js"></script>
+</body>
+</html>

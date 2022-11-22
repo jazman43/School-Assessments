@@ -1,0 +1,281 @@
+{"hotelListOfObjects":{"hotels":[
+    {"name":"jacks Place",
+    "locaion":"hamilton new zealand",
+    "price":250,
+    "rating":"8.7",
+    "starRating":5,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"apartment"}
+    ,
+
+    {"name":"VR hamilton",
+    "locaion":"hamilton new zealand",
+    "price":275,
+    "rating":"6.4",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Koromatua Homestead",
+    "locaion":"hamilton new zealand",
+    "price":169,
+    "rating":"8.1",
+    "starRating":0,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"Bed & Breakfast"}
+    ,
+
+    {"name":"Hilton Auckland",
+    "locaion":"auckland new zealand",
+    "price":557,
+    "rating":"9.3",
+    "starRating":5,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+    
+    {"name":"ibis budgut Auckland Airport",
+    "locaion":"auckland new zealand",
+    "price":179,
+    "rating":"7.9",
+    "starRating":3,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Quest on Queen",
+    "locaion":"auckland new zealand",
+    "price":297,
+    "rating":"7.9",
+    "starRating":0,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"apartment"}
+    ,
+
+    {"name":"Royal Park Lodge",
+    "locaion":"auckland new zealand",
+    "price":209,
+    "rating":"7.5",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Mercure Wellington Abel Tasman",
+    "locaion":"wellington new zealand",
+    "price":419,
+    "rating":"7.7",
+    "starRating":3,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"James Cook Hotel Grand Chancellor",
+    "locaion":"wellington new zealand",
+    "price":409,
+    "rating":"8.4",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Quest Wellington",
+    "locaion":"wellington new zealand",
+    "price":273,
+    "rating":"8.1",
+    "starRating":4,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Comfort Hotel Wellington",
+    "locaion":"wellington new zealand",
+    "price":349,
+    "rating":"7.8",
+    "starRating":3,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Novertel Wellington",
+    "locaion":"wellington new zealand",
+    "price":328,
+    "rating":"8.3",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"The Cove",
+    "locaion":"taupo new zealand",
+    "price":336,
+    "rating":"8.4",
+    "starRating":3,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"The Reef Resort",
+    "locaion":"taupo new zealand",
+    "price":990,
+    "rating":"9.3",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Alpine Lake Motor Lodge",
+    "locaion":"taupo new zealand",
+    "price":328,
+    "rating":"8.9",
+    "starRating":4,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Acacia Bay",
+    "locaion":"taupo new zealand",
+    "price":197,
+    "rating":"9.7",
+    "starRating":0,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"apartment"}
+    ,
+
+    {"name":"Trinity Wharf Tauranga",
+    "locaion":"Tauranga new zealand",
+    "price":303,
+    "rating":"8.3",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+    {"name":"Academy Motor Inn",
+    "locaion":"Tauranga new zealand",
+    "price":225,
+    "rating":"8.3",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Clarence Hotel",
+    "locaion":"Tauranga new zealand",
+    "price":570,
+    "rating":"9.0",
+    "starRating":0,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"The French Country",
+    "locaion":"Tauranga new zealand",
+    "price":893,
+    "rating":"9.0",
+    "starRating":0,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Mount Tutu Eco-Sanctuary",
+    "locaion":"Tauranga new zealand",
+    "price":208,
+    "rating":"no rating availble",
+    "starRating":"",
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"Bed & Breakfast"}
+    ,
+
+    {"name":"Quest on Durham",
+    "locaion":"Tauranga new zealand",
+    "price":250,
+    "rating":"8.2",
+    "starRating":0,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Sudima Chrischurch Airport",
+    "locaion":"christchurch new zealand",
+    "price":260,
+    "rating":"8.4",
+    "starRating":4,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Garden Hotel",
+    "locaion":"christchurch new zealand",
+    "price":167,
+    "rating":"7.9",
+    "starRating":3,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+    
+    {"name":"The Elms",
+    "locaion":"christchurch new zealand",
+    "price":299,
+    "rating":"no rating availble",
+    "starRating":0,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"Bed & Breakfast"}
+    ,
+
+    {"name":"Fable Dunedin",
+    "locaion":"dunedin new zealand",
+    "price":331,
+    "rating":"8.2",
+    "starRating":5,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Longbourne Lodge",
+    "locaion":"dunedin new zealand",
+    "price":155,
+    "rating":"9.3",
+    "starRating":4,
+    "freeCanellation":true,
+    "favourites":false,
+    "type":"hotel"}
+    ,
+
+    {"name":"Bella Vista Dunedin",
+    "locaion":"dunedin new zealand",
+    "price":188,
+    "rating":"8.0",
+    "starRating":4,
+    "freeCanellation":false,
+    "favourites":false,
+    "type":"hotel"}
+
+
+]}}
