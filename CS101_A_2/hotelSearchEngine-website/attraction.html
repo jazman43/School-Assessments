@@ -18,7 +18,7 @@
                         <i class="fa-solid fa-house"></i>                        
                     </li>
                     <li class="nav-item attraction-link">
-                        <a href="/search.html">attraction</a>
+                        <a href="/attraction.html">attraction</a>
                         <i class="fa-solid fa-ferris-wheel"></i>
                     </li>
                     <li class="nav-item favourits-link">
@@ -39,19 +39,21 @@
         <div class="search-input">
             <div class="search-bar">
                 <form action="" class="search-form">
-                    <div class="search-box">
-                        <input type="text" class="search-bar" placeholder="Destination or hotel"/>
+                    <div class="search-box-top">
+                        <div class="search-box">
+                            <input type="text" class="search-bar" placeholder="Destination or hotel" id="search-bar-id-search-page"/>
+                        </div>
+                        <div class="search-box">
+                            <input type="date" class="start-date" id="start-date-id-search-page"/>
+                            <input type="date" class="end-date" id="end-date-id-search-page"/>
+                        </div>
+                        <div class="search-box">
+                            <label for="number-of-rooms">rooms</label>
+                            <input type="number" class="number-rooms" placeholder="1" id="number-of-rooms-id-search-page"/>
+                            <label for="number-of-guests">guests</label>
+                            <input type="number" class="number-guests" placeholder="2" id="number-of-guests-id-search-page"/>
+                        </div><br>
                     </div>
-                    <div class="search-box">
-                        <input type="date" class="start-date" />
-                        <input type="date" class="end-date" />
-                    </div>
-                    <div class="search-box">
-                        <label for="number-of-rooms">rooms</label>
-                        <input type="number" class="number-rooms" placeholder="1" />
-                        <label for="number-of-guests">guests</label>
-                        <input type="number" class="number-guests" placeholder="2" />
-                    </div><br>
                     <div class="search-box submit-search">
                         <input type="submit" value="search"><br>
                     </div>
@@ -97,6 +99,9 @@
             </div>
         </div>
     </header>
+    <Div>
+        <h1>NOT IMPLEMENTED</h1>
+    </Div>
     <section class="search-result-wraper">
         <div class="sort-by-map-wraper">
             <label for="sortby" class="sort-by-dropdown">
@@ -466,6 +471,6 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/c18602a1e5.js" crossorigin="anonymous"></script>
-    <script src="#"></script>
+    
 </body>
 </html>

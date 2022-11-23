@@ -15,6 +15,14 @@ document.addEventListener('DOMContentLoaded', ()=>{
         numberRooms:document.getElementById("number-rooms-id"),
         numberGuests: document.getElementById("number-guests-id")
     };
+    
+    let currentDate = new Date();
+    // searchObj.dateStart.min = currentDate.toLocaleDateString();
+    // searchObj.dateEnd.min = currentDate.toLocaleDateString();
+    // //searchObj.dateStart.min = currentDate.getTime(); 
+    // //searchObj.dateEnd.min = currentDate.getTime();
+    // console.log(searchObj.dateStart.min = currentDate.toLocaleDateString());
+
 
     //lisin for submit button pressed
     document.addEventListener('submit', function(event){let savedSearchToString;
@@ -29,6 +37,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
             guestsNumberValue : searchObj.numberGuests.value
         }
         
+        let fDate = new Date(saveSearchObj.startDateValue);
+        let lDate = new Date(saveSearchObj.endDateValue);
         //check value was assind probplie 
         //console.log(saveSearchObj);
         if(saveSearchObj.searchBarValue != null){
@@ -44,8 +54,18 @@ document.addEventListener('DOMContentLoaded', ()=>{
             
         }    
         
-        window.location.assign("./search.html");
-        });
+        
+
+        if(fDate.getTime() < lDate.getTime() && fDate.getTime() >= currentDate.getTime()){
+            window.location.assign("./search.html");
+        }else{
+            alert('your Check in date cant be before current day and after check out date thank you.');
+        }
+
+
+
+        
+    });
        
     
      

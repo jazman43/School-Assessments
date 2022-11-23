@@ -1,23 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 :root{
     --bannerColor: rgba(64, 64, 64, 0.25);
     --imgtint: rgb(39, 39, 39);
+    --darkerBannerColor: rgba(64,64,64,.6);
 }
 
 body{
-    font-family: 'ABeeZee', sans-serif ;    
+    font-family: 'ABeeZee', sans-serif ;
+    width: 100%;    
+    margin: 0;
+    padding: 0;
+    
 }
 
 .head{   
     background-image: url(https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg);
     height: 120vh;
-    background-size: cover;    
+    background-size: cover; 
 }
 
 h2{
@@ -41,7 +43,7 @@ select{
     background-color: var(--bannerColor);
     width: 100%;
     justify-content: space-between;
-    height: 10%;
+    height: 8rem;
      
     font-size: 30px;  
 }
@@ -60,7 +62,7 @@ select{
 
 .nav-item{
     margin: 5px;
-    width: 150px;
+    width: 2280px;
     height: auto;  
     border-left: 6px;
     text-align: center;
@@ -79,19 +81,38 @@ select{
     background-color: black;
     color: white;
 }
-.search-bar-input{
+
+.search-box-top{
     display: flex;
-    
+    width: 100%;
+    margin: 10px;
+    justify-content: space-between;
 }
 
-.search-form{
-    background-color: var(--bannerColor);
-    width: 50%;
-    height: 100px;
-    
-    margin: 200px auto;
+.lower-filters{
     display: flex;
     justify-content: space-between;
+}
+.submit-search{
+   
+    text-align: end;
+}
+#submit-button-id-search-page{
+    background-color: darkgray;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 8px solid rgba(0, 0, 0, 0.723);
+}
+.search-form{
+    background-color: var(--bannerColor);
+    width: 60%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;    
+    margin: 200px auto;    
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .destination-box{
@@ -195,9 +216,7 @@ select{
     margin-left: 50px;
 }
 
-.lower-filters{
-    display: flexbox;
-}
+
 
 /*login sign up section*/
 .log-in-sign-up-wrapper{
@@ -242,4 +261,182 @@ select{
     border: none;
     background-color: rgba(57, 54, 53, 0.613);
     border-radius: 5px;
+}
+
+.hotel-your-booking-basic-info{
+    background-color: var(--darkerBannerColor);
+    display: flex;
+    margin: 50px 40% ;
+    padding: 10px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.booking-details{
+    background-color: var(--darkerBannerColor);
+    height: 70rem;
+    width: 20%;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.payment-form{
+    display: flex;    
+    position: absolute;
+    top: 60rem;
+    left: 40%;
+    background-color: var(--darkerBannerColor);
+    justify-content: center;
+    margin: 20px;
+    margin-right: 100px;
+    text-align: center;
+    width: 45%;
+    height: 40rem;
+    padding: 10px;
+    color: white;
+    align-items: center;
+}
+
+.fields-are-requied{
+    margin: 20px;
+}
+.radiel-are-they-traving-for-work{
+    margin: 20px;
+    display: inline-block;
+    justify-content:space-between;
+    padding: 10px
+}
+.fname-lastname {
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    
+}
+.email-and-comfurm-email{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.booking-text-input{
+    padding: 2px;
+    margin: 5px;
+    border: 5px solid rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+}
+
+#who-are-you-booking-for{
+    margin: 10px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+    justify-content: center;
+}
+
+#main-guests{
+    margin-left: 20px;
+}
+#someone-else{
+    margin-left: 20px;
+}
+.who-title{
+    margin: 20px;
+}
+
+#payment-submit-button{
+    margin: 20px;
+    padding: 20px;
+    font-size: 18px;
+    background-color: rgb(110, 110, 255);
+    border-width: 5px;
+    border-radius: 8px;
+    border-color: var(--darkerBannerColor);
+}
+
+.check-date{
+    margin: 25px ;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding: 3px;
+    width: 30%;
+    
+    justify-content: center;
+    border: 2px solid rgb(69, 69, 69);
+    border-radius: 5px;
+}
+
+
+
+@media screen and (max-width: 1300px){
+    .search-form{        
+        height: 18rem;
+    }
+    .lower-filters{
+        flex-wrap: wrap;
+
+    }
+    
+    .search-bar{
+        height: 100%;
+    }
+    .hotel-info-box{
+        margin: 30px 20px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .head{
+        justify-content: center;
+        color: white;
+    }
+    .title-bar{
+        display: block;
+        text-align: center;
+        height: 300px;
+    }
+    .nav-bar-link{
+        height: 150px;
+        margin: 20px;        
+    }
+    .search-form{
+        height: auto;
+        width: auto;
+        margin: 60px 10px;
+        text-align: center;
+    }
+    .search-box-top{
+        display: block;        
+    }
+    .search-box{
+        margin: 10px;
+    }
+
+    .number-rooms{
+        margin: 5px 80px;
+        padding: 2px;
+    }
+    .number-guests{
+        margin: 5px 80px;
+        padding: 2px;
+    }
+
+    .hotel-info-box{
+        display: block;
+        height: auto;
+    }
+    .sort-by-map-wraper{
+        margin: 40px;
+        display: block;
+        
+    }
+    .hotel-deals-pricing{
+        display: block;
+        margin: 5px;
+        width: auto;
+        height: auto;
+    }
 }

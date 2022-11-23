@@ -136,26 +136,41 @@ function printData(jsonData){
             
             event.preventDefault();             
             //info i need to pass on (price, name, number of guests and rooms, date's, canellation)
-                
-            //     //check value was assind probplie 
+            let getCurrentHotelInfo = {
+                name: hotel['name'],
+                price: hotel['price'],
+                guests: numberOfGuestsSearchPage.value,
+                rooms: numberOfRoomsSearchPage.value,
+                startDate: startDateSearchPage.value,
+                endDate: endDateSearchPage.value,
+                isCanellation: hotel['freeCanellation'],
+                stars: hotel['starRating'],
+                guestsRating: hotel['rating'],
+                favourites: hotel['favourites']
+            }
+            
+
+            let savedHotelDealToString;
+            
             console.log(count);
 
             console.log(hotel['price']);
-            //     // if(saveSearchObj.searchBarValue != null){
-            //     //     savedSearchToString = JSON.stringify(saveSearchObj);
-            //     //     //alert("not null")
-            //     // }
+
+            if(getCurrentHotelInfo.price != null){
+                savedHotelDealToString = JSON.stringify(getCurrentHotelInfo);
+                    //alert("not null")
+            }
                 
-            //     //save user input
-            //     // if(savedSearchToString != "{}"){
-            //     //     localStorage.setItem("searchJSONSaved", savedSearchToString);
-            //     //     // console.log("Ture");
-            //     //     // alert(savedSearchToString);
+                
+            if(savedHotelDealToString != "{}"){
+                localStorage.setItem("hotelDealJSONSaved", savedHotelDealToString);
+                
+                // alert(savedSearchToString);
                     
-            //     // }    
+            }    
+            console.log(savedHotelDealToString);    
+            window.location.assign("./book.html");
                 
-            //     // window.location.assign("./search.html");
-            //     // });
     
     
         });
