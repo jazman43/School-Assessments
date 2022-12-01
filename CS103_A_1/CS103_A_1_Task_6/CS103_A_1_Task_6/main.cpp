@@ -19,7 +19,7 @@ int main() {
 	//main loop
 	do {
 		//display menus
-		cout << "\n0=>.Show daily Expenses\n1=>.show weekly Expenses\n2=>.Input your expenses for the last three days\n3=>.Exit\n\nEnter Your Choice:";
+		cout << "\n0=>.Input your expenses for the last Seven days\n1=>.Show weekly Expenses\n2=>.Show daily Expenses\n3=>.Exit\n\nEnter Your Choice:";
 
 		//get user input for menu
 		cin >> userInput;
@@ -27,14 +27,15 @@ int main() {
 		//switch to get menu peace needed
 		switch (userInput)
 		{
-		case 0://daily expenses
-			tracker.showDailyExpenses();
+		case 0://get user unput
+			tracker.getInput();
+			
 			break;
 		case 1://weekly expenses
 			tracker.showWeeklyExpenses();
 			break;
-		case 2://get user unput
-			tracker.getInput();
+		case 2://daily expenses
+			tracker.showDailyExpenses();
 			break;
 		default:
 			break;
