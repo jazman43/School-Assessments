@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\GGPC\Documents\GitHub\School-Assessments\CS103_A_1\CS103_A_1_Task_5\CS103_A_1_Task_5\main.cpp(29,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  CS103_A_1_Task_5.vcxproj -> C:\Users\GGPC\Documents\GitHub\School-Assessments\CS103_A_1\CS103_A_1_Task_5\x64\Debug\CS103_A_1_Task_5.exe
