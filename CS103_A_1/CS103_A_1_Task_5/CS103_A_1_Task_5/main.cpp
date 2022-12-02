@@ -13,16 +13,16 @@ using namespace std;
 //Creating functions
 void SquareTriangle();
 void Rectangle(int width, int height);
-int calculateScore(int score);
+int calculateScore(bool isCorrect);
 
-
+//globe verabile
+int score = 0;
 
 int main() {
 
 	//varables
 	int menuChoie;
-	int totalScore = 0;
-	int *totalScorePtr = &totalScore;
+	int totalScore = 0;	
 	int width = 15, heigth = 5;
 
 	//for randomizing rand()%
@@ -64,9 +64,9 @@ int main() {
 			break;
 		case 1:
 			//show final Score
-			//one bug known score will increse event if user got i wrong
-			*totalScorePtr = calculateScore(totalScore);
-			cout << "\n\n****Total Score: " << *totalScorePtr << endl;
+			
+			totalScore = calculateScore(false);
+			cout << "\n\n****Total Score: " << totalScore << endl;
 			break;
 		default:
 			cout << "Invaled opcion";
@@ -87,7 +87,7 @@ void SquareTriangle() {
 	//verables
 	int randomSquareNumber = rand()%2;
 	int squareChoice;
-	int pointsToAdd = 10;
+	
 
 	//to randomlly pick squre or triangle to display
 	if (randomSquareNumber == 1) {
@@ -106,7 +106,7 @@ void SquareTriangle() {
 		cin >> squareChoice;
 		//checks to see if user got it correct
 		if (squareChoice == 1) {
-			calculateScore(pointsToAdd);
+			calculateScore(true);
 			cout << "\nYAY THATS Correct\n";
 		}
 		else
@@ -130,7 +130,7 @@ void SquareTriangle() {
 		cin >> squareChoice;
 		//checks to see if user got it correct
 		if (squareChoice == 2) {
-			calculateScore(pointsToAdd);
+			calculateScore(true);
 			cout << "\nYAY THATS Correct\n";
 		}
 		else
@@ -147,7 +147,7 @@ void Rectangle(int width, int height) {
 
 	//verables
 	int rectangleChoice;
-	int pointAddToScore = 10;
+	
 
 	//nested for loops to draw the rectangle
 	for (int i = 0; i < height; i++) {
@@ -165,7 +165,7 @@ void Rectangle(int width, int height) {
 
 	//checks to see if user got it correct
 	if (rectangleChoice == 0) {
-		calculateScore(pointAddToScore);
+		calculateScore(true);
 		cout << "\nYAY THATS Correct\n";
 	}
 	else
@@ -175,11 +175,13 @@ void Rectangle(int width, int height) {
 	
 }
 
-int calculateScore(int score) {
-	int totalScore;
+int calculateScore(bool isCorrect) {
+	
 	//adds 10 to your total score and returns it to be displayed
-	totalScore = score + 10;
+	
+	if (isCorrect) {
+		score += 10;
+	}
 
-
-	return totalScore;
+	return score;
 }
