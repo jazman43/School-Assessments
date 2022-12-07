@@ -1,3 +1,10 @@
+/*
+Task 6
+Jared evans
+CS103 assessment 1
+*/
+
+
 #include <iostream>
 #include <string>
 #include "expensesTracker.h"
